@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   resetList.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
     clearList();
   });
   
